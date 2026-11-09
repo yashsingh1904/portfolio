@@ -37,6 +37,73 @@
   pointer-events: none;
 }
 
+/* ---- Responsive adjustments -------------------------------------------- */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero {
+    padding: var(--space-5) var(--space-4);
+    min-height: auto;
+  }
+
+  .hero-intro {
+    min-height: 240px;
+  }
+}
+
+/* Phone */
+@media (max-width: 560px) {
+  .hero {
+    padding: var(--space-4) var(--space-3);
+    min-height: auto;
+    padding-top: var(--space-6);
+  }
+
+  .hero-intro {
+    min-height: auto;
+    gap: var(--space-3);
+  }
+
+  .hero-intro::after {
+    width: 14rem;
+    height: 14rem;
+    right: -5rem;
+    top: -5rem;
+  }
+
+  .hero-name {
+    font-size: clamp(2rem, 9vw, 3rem);
+    word-break: break-word;
+  }
+
+  .hero-roles {
+    font-size: clamp(0.85rem, 3.5vw, 1.1rem);
+  }
+
+  .hero-tagline {
+    font-size: 0.95rem;
+  }
+
+  .hero-cta {
+    width: 100%;
+  }
+
+  .hero-cta .btn-pill {
+    flex: 1 1 auto;
+    text-align: center;
+    padding: 0.65em 1.2em;
+    font-size: 0.9rem;
+  }
+
+  .monogram {
+    min-height: 100px;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.7rem;
+  }
+}
+
 .hero-eyebrow {
   font-family: var(--font-mono);
   font-size: 0.78rem;

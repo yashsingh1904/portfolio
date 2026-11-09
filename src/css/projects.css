@@ -120,3 +120,39 @@
   justify-content: center;
   margin-top: var(--space-6);
 }
+
+/* ---- Responsive adjustments -------------------------------------------- */
+@media (max-width: 900px) {
+  .project-card--featured .project-card__media {
+    aspect-ratio: 16 / 9;
+  }
+
+  .project-card--featured .project-card__title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .project-card {
+    padding: var(--space-4);
+    gap: var(--space-3);
+  }
+
+  .project-card__title {
+    font-size: 1.15rem;
+  }
+
+  .project-card__text {
+    font-size: 0.88rem;
+  }
+
+  .project-tag {
+    font-size: 0.65rem;
+    padding: 0.25em 0.6em;
+  }
+
+  .proj-link {
+    font-size: 0.8rem;
+    padding: 0.35em 0.8em;
+  }
+}

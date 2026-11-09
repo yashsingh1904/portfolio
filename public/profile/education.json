@@ -1,19 +1,22 @@
 {
-    "education":[
+    "education": [
         {
-            "title": "Jun 20XX - Jun 20YY",
-            "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
-            "icon" : {
-                "src": "images/education/lorem-ipsum.png"
-            }
+            "title": "2023 – 2027",
+            "cardTitle": "B.Tech",
+            "cardSubtitle": "Delhi Technological University, Delhi",
+            "cardDetailedText": ""
         },
         {
-            "title": "Apr 20XX",
-            "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+            "title": "2022",
+            "cardTitle": "Senior Secondary (Class XII, CBSE)",
+            "cardSubtitle": "RPV Vidyalaya, Sec XI, Rohini, Delhi",
+            "cardDetailedText": "Marks – 85%"
+        },
+        {
+            "title": "2020",
+            "cardTitle": "Secondary (Class X, CBSE)",
+            "cardSubtitle": "Govt. Boys Sr. Sec. School, Rohini, Delhi",
+            "cardDetailedText": "Marks – 91%"
         }
     ]
 }

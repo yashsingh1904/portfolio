@@ -32,3 +32,27 @@
   object-fit: cover;
   display: block;
 }
+
+/* ---- Responsive adjustments -------------------------------------------- */
+@media (max-width: 900px) {
+  .about-image-tile {
+    min-height: 250px;
+    max-height: 350px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about-bio-tile {
+    gap: var(--space-3);
+  }
+
+  .about-bio-tile p {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .about-image-tile {
+    min-height: 220px;
+    max-height: 300px;
+  }
+}

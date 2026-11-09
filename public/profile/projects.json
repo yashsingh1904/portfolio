@@ -1,149 +1,105 @@
 {
-    "projects" : [
+    "projects": [
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Dev Portfolio",
-            "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
+            "title": "Mini Redis C++ Server",
+            "bodyText": "- A high-performance, in-memory key-value store built from scratch in **C++**.\n- Designed an **O(1) LRU cache** using a combined hashmap and doubly-linked-list structure with bounded-capacity eviction.\n- Built a raw **TCP server** (cross-platform: POSIX sockets / Winsock) supporting a custom text-based command protocol.\n- Handles **concurrent multi-client connections** via a thread-per-connection model with **std::mutex** for thread safety.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/dev-portfolio"
-                },
-                {
-                    "text": "Live",
-                    "href": "https://mayankagarwal.me"
+                    "href": "https://github.com/yashsingh-19/mini-redis"
                 }
             ],
-            "tags" : [
-                "React",
-                "Portfolio",
-                "JavaScript"
+            "tags": [
+                "C++",
+                "TCP Sockets",
+                "Multithreading",
+                "LRU Cache",
+                "Systems Programming"
             ]
         },
         {
-            "image" : "images/projects/caaring-poster.png",
-            "title": "Caaring -  Cab Share App",
-            "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
+            "title": "Backend Ledger System",
+            "bodyText": "- A robust **backend banking system** using **Node.js**, **Express.js**, and **MongoDB** to securely manage financial records and user account balances.\n- Engineered **REST APIs** to process banking transactions, deposits, and withdrawals with accurate data flow.\n- Designed optimized database schemas with **Mongoose**, implementing strict validation and transaction handling to prevent race conditions.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
-                },
-                {
-                    "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
+                    "href": "https://github.com/yashsingh-19/backend-ledger"
                 }
             ],
-            "tags" : [
+            "tags": [
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "JWT",
+                "REST APIs",
+                "EJS"
+            ]
+        },
+        {
+            "title": "Zerodha Clone",
+            "bodyText": "- A full-stack **clone of Zerodha** (India's largest stock broker) built with the **MERN stack**.\n- Features responsive trading dashboard UI with real-time data visualization.\n- Implements user authentication, portfolio management, and stock watchlist functionality.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/yashsingh-19/zerodha-clone"
+                }
+            ],
+            "tags": [
+                "React.js",
+                "Node.js",
+                "MongoDB",
+                "Express.js",
+                "Full-Stack"
+            ]
+        },
+        {
+            "title": "Teensy Flight Computer",
+            "bodyText": "- Custom **flight avionics computer** built for Rocketry DTU's competition rockets.\n- Handles real-time **sensor data acquisition** (IMU, barometer, GPS) and **telemetry transmission**.\n- Earned an **\"Excellent\" grade** at the IN-SPACe & ISRO Rocketry Competition 2025.\n- Developed alongside ground-station software for live mission monitoring.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/yashsingh-19"
+                }
+            ],
+            "tags": [
+                "C++",
+                "Embedded Systems",
+                "Teensy",
+                "Avionics",
+                "Telemetry"
+            ]
+        },
+        {
+            "title": "AI Stock Trend Predictor",
+            "bodyText": "- A financial forecasting tool utilizing **LSTM Neural Networks** and **Streamlit** for interactive visualization.\n- Features **real-time data ingestion** via `yfinance` and automated data preprocessing.\n- Provides trend predictions with customizable time windows and technical indicators.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/yashsingh-19/Stock-Price-Predictor"
+                }
+            ],
+            "tags": [
                 "Python",
-                "Django",
-                "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
+                "LSTM",
+                "Streamlit",
+                "Machine Learning",
+                "Finance"
             ]
         },
         {
-            "image" : "images/projects/quiet-hours-poster.jpg",
-            "title": "Quiet Hours App",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
+            "title": "Voice Feedback & Speech Engine",
+            "bodyText": "- A **low-latency voice feedback** and speech-processing engine built in Python.\n- Converts real-time audio input into structured text and dynamic speech responses.\n- Uses Python audio libraries for efficient audio processing and NLP.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+                    "href": "https://github.com/yashsingh-19/Talk-Back-Program"
                 }
             ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Alarm Manager",
-                "VIT"
-            ]
-        },
-        {
-            "title": "Secure Chat App",
-            "bodyText": "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/SecureChatApp"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Firebase",
-                "RSA"
-            ]
-        },
-        {
-            "title": "MVVM Sample App",
-            "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Room",
-                "Coroutines",
-                "Flow",
-                "Hilt-Dagger",
-                "NetworkBoundResource"
-            ]
-        },
-        {
-            "title": "Feed List App",
-            "bodyText": "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Paging 3",
-                "Coroutines",
-                "Flow"
-            ]
-        },
-        {
-            "title": "Task Tracker",
-            "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/task-tracker-app"
-                }
-            ],
-            "tags" : [
-                "TypeScript",
-                "Angular 12",
-                "JavaScript"
-            ]
-        },
-        {
-            "title": "Image Encryption/Decryption",
-            "bodyText": "- A Web App for Image Encryption and Decryption made in **Django**.\n - Uses **SDES** algorithm for encryption/decryption.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/img-encrypt-sdes"
-                }
-            ],
-            "tags" : [
+            "tags": [
                 "Python",
-                "Django",
-                "SDES",
-                "Cryptography"
+                "NLP",
+                "Speech Processing",
+                "Real-time Audio"
             ]
         }
     ]

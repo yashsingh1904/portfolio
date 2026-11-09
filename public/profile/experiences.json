@@ -1,33 +1,26 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Full-time",
+            "title": "Software Engineering Intern",
+            "subtitle": "Tulip 3P Media Pvt. Ltd.",
+            "workType": "Internship · On-Site",
             "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
+                "Engineered backend dashboards and internal digital systems using **Node.js** and **Express.js**, building reusable code and scalable **REST APIs** to improve operational efficiency.",
+                "Developed full-stack features across the **MERN stack**, integrating **React.js** for dynamic, responsive user interfaces and **MongoDB** for efficient data management.",
+                "Collaborated with cross-functional teams within **Agile** workflows to troubleshoot, debug, and develop full-stack features, ensuring high application performance."
             ],
-            "dateText": "06/20XX – Present"
+            "dateText": "05/2026 – 07/2026"
         },
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
-            "workType": "Internship",
+            "title": "Team Manager – Avionics & Software",
+            "subtitle": "Rocketry DTU",
+            "workType": "Leadership",
             "workDescription": [
-                "Worked on abc."
+                "Led development of **flight avionics**, **telemetry**, and **ground-station software** while directing 10+ core members and mentoring 50+ volunteers.",
+                "Coordinated **90+ core members** and **550+ volunteers** across multiple functional teams, streamlining event execution and strengthening financial accountability.",
+                "Earned an **\"Excellent\" grade** at the **IN-SPACe & ISRO Rocketry Competition (2025)** for leading avionics and software, including the flight computer and ground-station systems."
             ],
-            "dateText": "01/20XX – 05/20XX"
-        },
-        {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
-            "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
-            ],
-            "dateText": "09/20XX – 01/20YY"
+            "dateText": "10/2023 – Present"
         }
     ]
 }
