@@ -20,6 +20,9 @@ function initialsOf(name) {
 
 function Home() {
   const [data, setData] = useState(null);
+  const [resumeUrl, setResumeUrl] = useState(
+    'https://drive.google.com/file/d/1OD-WawkbugMNgmWfWa-Yi0UUJD9g1hPB/view?usp=sharing',
+  );
 
   useEffect(() => {
     fetch(endpoints.home, {
@@ -27,6 +30,20 @@ function Home() {
     })
       .then((res) => res.json())
       .then((res) => setData(res))
+      .catch((err) => err);
+
+    fetch(endpoints.navbar, {
+      method: 'GET',
+    })
+      .then((res) => res.json())
+      .then((navData) => {
+        const resumeSection = navData?.sections?.find(
+          (s) => s.title?.toLowerCase() === 'resume',
+        );
+        if (resumeSection?.href) {
+          setResumeUrl(resumeSection.href);
+        }
+      })
       .catch((err) => err);
   }, []);
 
@@ -52,17 +69,28 @@ function Home() {
             {data?.tagline && <p className="hero-tagline">{data.tagline}</p>}
             <div className="hero-cta">
               <Link className="btn-pill btn-accent" to="/projects">
-                View my work
+                <span>View my work</span>
               </Link>
               <Link className="btn-pill btn-ghost" to="/about">
-                About me
+                <span>About me</span>
               </Link>
+              <Link className="btn-pill btn-contact" to="/contact">
+                <span>Contact me</span>
+              </Link>
+              <a
+                className="btn-pill btn-resume"
+                href={resumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Resume ↗</span>
+              </a>
             </div>
           </div>
 
           <div className="tile tile--accent monogram span-2">
             <span className="monogram-mark">{initialsOf(data?.name)}</span>
-            <span className="monogram-label">{data?.name}</span>
+            <span className="monogram-label">B.Tech · Software & Avionics</span>
           </div>
 
           <div className="tile hero-social span-2">

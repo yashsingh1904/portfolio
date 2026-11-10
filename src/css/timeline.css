@@ -190,3 +190,32 @@
     padding-left: 0.9rem;
   }
 }
+
+/* ---- Premium visual enhancements --------------------------------------- */
+
+/* Pulsing ring expanding from the timeline dot */
+@keyframes dot-pulse-ring {
+  0% {
+    box-shadow: 0 0 0 4px var(--accent-soft);
+  }
+  70% {
+    box-shadow: 0 0 0 12px transparent;
+  }
+  100% {
+    box-shadow: 0 0 0 4px var(--accent-soft);
+  }
+}
+
+.tl-node--dot {
+  animation: dot-pulse-ring 3s ease-in-out infinite;
+}
+
+/* Accent left border on timeline card on hover */
+.tl-card {
+  border-left: 3px solid transparent;
+}
+
+.tl-card:hover {
+  border-image: linear-gradient(to bottom, #818cf8, #c084fc) 1;
+  border-image-slice: 1;
+}

@@ -3,12 +3,12 @@
         {
             "component": "About",
             "path": "/about",
-            "headerTitle": "About"
+            "headerTitle": "About Me"
         },
         {
             "component": "Skills",
             "path": "/skills",
-            "headerTitle": "Skills"
+            "headerTitle": "Technical Skills"
         },
         {
             "component": "Education",
@@ -23,7 +23,12 @@
         {
             "component": "Projects",
             "path": "/projects",
-            "headerTitle": "Projects"
+            "headerTitle": "Featured Projects"
+        },
+        {
+            "component": "Contact",
+            "path": "/contact",
+            "headerTitle": "Contact Me"
         }
     ]
 }

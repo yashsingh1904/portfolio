@@ -86,13 +86,15 @@
 
   .hero-cta {
     width: 100%;
+    gap: var(--space-2);
   }
 
   .hero-cta .btn-pill {
-    flex: 1 1 auto;
+    flex: 1 1 calc(50% - var(--space-2));
+    min-width: 130px;
     text-align: center;
-    padding: 0.65em 1.2em;
-    font-size: 0.9rem;
+    padding: 0.65em 1em;
+    font-size: 0.88rem;
   }
 
   .monogram {
@@ -188,4 +190,74 @@
   gap: var(--space-4);
   align-items: flex-start;
   justify-content: center;
+}
+
+/* ---- Premium visual enhancements --------------------------------------- */
+
+/* Animated gradient text for hero name */
+@keyframes gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.hero-name {
+  background: linear-gradient(90deg, #818cf8, #c084fc, #818cf8);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease infinite;
+}
+
+/* Floating animation for monogram tile */
+@keyframes monogram-float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-8px); }
+}
+
+.monogram {
+  animation: monogram-float 6s ease-in-out infinite;
+}
+
+/* Pulsing glow on eyebrow dot */
+@keyframes eyebrow-pulse {
+  0%, 100% { box-shadow: 0 0 0 4px var(--accent-soft), 0 0 8px var(--accent-soft); }
+  50%      { box-shadow: 0 0 0 7px var(--accent-soft), 0 0 16px var(--accent-soft); }
+}
+
+.hero-eyebrow::before {
+  animation: eyebrow-pulse 2.5s ease-in-out infinite;
+}
+
+/* Shimmer sweep on CTA accent button */
+@keyframes btn-shimmer {
+  0%   { left: -100%; }
+  100% { left: 100%; }
+}
+
+.hero-cta .btn-accent {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-cta .btn-accent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+  transition: none;
+  pointer-events: none;
+}
+
+.hero-cta .btn-accent:hover::after {
+  animation: btn-shimmer 0.75s ease forwards;
 }

@@ -1,0 +1,48 @@
+/* ==========================================================================
+   Social Icons - Vivid, High-Contrast Brand Colors for Both Themes
+   ========================================================================== */
+
+.social {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.social-icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--icon-bg);
+  box-shadow: 0 4px 14px var(--icon-glow, rgba(0, 0, 0, 0.25));
+  border: 1px solid var(--icon-border, transparent);
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease), filter var(--dur) var(--ease);
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.social-icon-btn:hover {
+  transform: translateY(-4px) scale(1.1);
+  box-shadow: 0 10px 24px var(--icon-glow, rgba(0, 0, 0, 0.4));
+  filter: brightness(1.12);
+}
+
+.social-icon-btn svg {
+  display: block;
+  transition: transform var(--dur) var(--ease);
+}
+
+.social-icon-btn:hover svg {
+  transform: scale(1.08);
+}
+
+/* Light mode border refinement for dark icons */
+[data-theme="light"] .social-icon-btn {
+  box-shadow: 0 4px 12px var(--icon-glow, rgba(0, 0, 0, 0.15));
+}

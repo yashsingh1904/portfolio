@@ -52,6 +52,7 @@ const GlobalStyles = createGlobalStyle`
 
   html {
     scrollbar-color: var(--border) transparent;
+    scroll-behavior: smooth;
   }
 
   body {

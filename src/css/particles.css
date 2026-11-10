@@ -1,0 +1,40 @@
+/* Floating particle dots background */
+.particle-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle-dot {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--accent);
+  animation: particle-float linear infinite alternate;
+}
+
+@keyframes particle-float {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-30px) translateX(15px);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-20px);
+  }
+  75% {
+    transform: translateY(-40px) translateX(10px);
+  }
+  100% {
+    transform: translateY(-20px) translateX(-10px);
+  }
+}
+
+/* Ensure main content sits above particles */
+.App {
+  position: relative;
+  z-index: 1;
+}
+
